@@ -1,0 +1,27 @@
+{
+    "name": "nguyenhiep/log-shorter",
+    "description": "Make your log shorter",
+    "type": "library",
+    "require": {
+        "spatie/laravel-package-tools": "^1.9"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nguyenhiep\\LogShorter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nguyenhiep\\LogShorter\\LogServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Nguyễn Văn Hiệp",
+            "email": "nguyenhiepvan.bka@gmail.com"
+        }
+    ]
+}
