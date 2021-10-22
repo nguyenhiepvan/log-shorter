@@ -1,4 +1,4 @@
-#Installation
+# Installation
 ```shell
 composer require nguyenhiep/log-shorter
 ```
@@ -10,7 +10,7 @@ composer require nguyenhiep/log-shorter
 php artisan vendor:publish --tag=log-shorter-config
 ```
 
-#Before
+# Before
 ```php
 [2021-10-21 20:50:04] local.ERROR: syntax error, unexpected '$mail_id' (T_VARIABLE) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '$mail_id' (T_VARIABLE) at /Users/hiepnguyen/workspace/laravel/socket/app/Console/Commands/HandleEmailCommand.php:56)
 [stacktrace]
@@ -26,7 +26,7 @@ php artisan vendor:publish --tag=log-shorter-config
 "} 
 
 ```
-#After
+# After
 ```php
 [2021-10-21 20:50:33] local.ERROR: syntax error, unexpected '$mail_id' (T_VARIABLE) {"exception":"ParseError: syntax error, unexpected '$mail_id' (T_VARIABLE) in /app/Console/Commands/HandleEmailCommand.php:56
 Stack trace:
