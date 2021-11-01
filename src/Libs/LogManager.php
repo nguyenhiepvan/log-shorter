@@ -18,10 +18,10 @@ class LogManager extends \Illuminate\Log\LogManager
      * @param string $name
      * @return \Psr\Log\LoggerInterface
      */
-    protected function get($name)
+    protected function get($name,array $config = null)
     {
         try {
-            return $this->channels[$name] ?? with($this->resolve($name), function ($logger) use ($name) {
+            return $this->channels[$name] ?? with($this->resolve($name, $config), function ($logger) use ($name) {
                     return $this->channels[$name] = $this->tap($name, new Logger($logger, $this->app['events']));
                 });
         } catch (\Throwable $e) {
