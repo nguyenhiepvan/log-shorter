@@ -18,7 +18,7 @@ class LogManager extends \Illuminate\Log\LogManager
      * @param string $name
      * @return \Psr\Log\LoggerInterface
      */
-    protected function get($name,array $config = null)
+    protected function get($name, ?array $config = null)
     {
         try {
             return $this->channels[$name] ?? with($this->resolve($name, $config), function ($logger) use ($name) {

@@ -3,7 +3,7 @@
     "description": "Make your log shorter",
     "type": "library",
     "require": {
-        "spatie/laravel-package-tools": "v1.6.3"
+        "spatie/laravel-package-tools": "^1.9"
     },
     "license": "MIT",
     "autoload": {
